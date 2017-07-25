@@ -1,0 +1,44 @@
+h1, h2, p
+{
+	font-family: "Trebuchet MS"
+}
+
+input[type = "text"].number
+{
+	width: 50px; 
+	border-radius: 4px;
+	text-align: center;
+	border: 1px solid #669966; 
+}
+
+select.styled-select 
+{
+   overflow: hidden;
+   background-color: #229922;
+   color: #FFFFFF;
+   border-radius: 20px;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+}
+
+div.query
+{
+	border: 2px #003300 solid;
+	padding: 5px;
+	max-width: 650px;
+	margin: auto;
+}
+
+div.ans
+{
+	
+}
+
+img
+{
+	height: 200px;
+	width: 200px;
+	display: block;
+    margin: 0 auto;
+}
+

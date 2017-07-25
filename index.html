@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+		<script src = rand.js> </script>
+		<link rel="stylesheet" href="random.css">
+		<title> Random Number Generator </title>
+		<link rel="shortcut icon" href="resources/logo.png" />
+	</head>
+	<body bgcolor = "EEFFEE">
+		<h1> <center> Random Number Generator </center> </h1>
+		<div class = "query">
+
+			<h2> Options: </h2>
+			<p> 1) Toss Coin <button type = "button" onclick = "coinToss()"> Go! </button> <br> </p>
+			<p> 2) Roll Dice <button type = "button" onclick = "dieRoll()"> Go! </button> <br> </p>
+			<p> 3) Get random 
+		
+				<select id = "ints" class = "styled-select"> 
+					<option value = "true" selected = "selected"> Integer </option>
+					<option value = "false"> Decimal </option>
+				</select>
+
+				between
+				<input type = "text" id = "min" class = "number" value = 0> </input>
+				and
+				<input type = "text" id = "max" class = "number" value = 1> </input>
+
+				<button type = "button" onclick = "getRandRange(false)"> Randomize! </button>
+			</p>
+
+
+			<p> 4) Get
+
+				<input type = "text" id = "k" class = "number" value = 2> </input>
+	
+				random 
+		
+				<select id = "intsm" class = "styled-select"> 
+					<option value = "true" selected = "selected"> Integers </option>
+					<option value = "false"> Decimals </option>
+				</select>
+
+				between
+				<input type = "text" id = "minm" class = "number" value = 0> </input>
+				and
+				<input type = "text" id = "maxm" class = "number" value = 1> </input>
+			<button type = "button" onclick = "getMultiple(false)"> Randomize! </button>
+			<button type = "button" onclick = "getMultiple(true)"> Download as CSV </button>
+			</p>
+
+			<hr/>
+			<div id = "rand"> </div>
+			<div id = "hist_plot" class = "ans"> </div>
+
+		</div>
+				
+
+
+	</body>
+</html>
